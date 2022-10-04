@@ -1,4 +1,4 @@
-            {%- if site.email -%}
+            {%- if site.email and site.email != "blank" -%}
             <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
             {% endif %}
             {%- if site.orcid_id -%}
