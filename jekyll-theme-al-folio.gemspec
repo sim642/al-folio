@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-paginate-v2"
   spec.add_runtime_dependency "jekyll-scholar"
   spec.add_runtime_dependency "jekyll-sitemap"
-  spec.add_runtime_dependency "jekyll-target-blank"
+  spec.add_runtime_dependency "jekyll-link-attributes"
   spec.add_runtime_dependency "jekyll-twitter-plugin"
   spec.add_runtime_dependency "jemoji"
   spec.add_runtime_dependency "mini_racer"
