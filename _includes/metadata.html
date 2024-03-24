@@ -96,6 +96,10 @@
         {%- capture link -%}https://www.scopus.com/authid/detail.uri?authorId={{site.scopus_id}}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
+    {%- if site.dblp_url -%}
+        {%- capture link -%}{{ site.dblp_url }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
     {%- if site.etis_id -%}
         {%- capture link -%}https://www.etis.ee/CV/{{site.etis_id}}/eng{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
@@ -150,10 +154,6 @@
     {%- endif -%}
     {%- if site.gitlab_username -%}
         {%- capture link -%}https://gitlab.com/{{ site.gitlab_username }}{%- endcapture -%}
-        {%- assign sameaslinks = sameaslinks | push: link -%}
-    {%- endif -%}
-    {%- if site.dblp_url -%}
-        {%- capture link -%}{{ site.dblp_url }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.stackoverflow_id -%}
