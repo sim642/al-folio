@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.9.0.gem"
+  spec.version       = "0.10.0.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -18,7 +18,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-diagrams"
   spec.add_runtime_dependency "jekyll-email-protect"
   spec.add_runtime_dependency "jekyll-feed"
+  spec.add_runtime_dependency "jekyll-get-json"
   spec.add_runtime_dependency "jekyll-imagemagick"
+  spec.add_runtime_dependency "jekyll-jupyter-notebook"
   spec.add_runtime_dependency "jekyll-link-attributes"
   spec.add_runtime_dependency "jekyll-minifier"
   spec.add_runtime_dependency "jekyll-paginate-v2"
