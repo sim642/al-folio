@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.10.0.gem"
+  spec.version       = "0.11.0.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "classifier-reborn"
   spec.add_runtime_dependency "jekyll"
   spec.add_runtime_dependency "jekyll-archives"
-  spec.add_runtime_dependency "jekyll-diagrams"
   spec.add_runtime_dependency "jekyll-email-protect"
   spec.add_runtime_dependency "jekyll-feed"
   spec.add_runtime_dependency "jekyll-get-json"
