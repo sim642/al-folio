@@ -15,8 +15,10 @@ gemspec
 #     gem 'jekyll-link-attributes'
 #     gem 'jekyll-minifier'
 #     gem 'jekyll-paginate-v2'
+#     gem 'jekyll-regex-replace'
 #     gem 'jekyll-scholar'
 #     gem 'jekyll-sitemap'
+#     gem 'jekyll-tabs'
 #     gem 'jekyll-toc'
 #     gem 'jekyll-twitter-plugin'
 #     gem 'jemoji'
@@ -25,6 +27,7 @@ gemspec
 #     gem 'webrick'
 # end
 # group :other_plugins do
+#     gem 'css_parser'
 #     gem 'feedjira'
 #     gem 'httparty'
 # end
