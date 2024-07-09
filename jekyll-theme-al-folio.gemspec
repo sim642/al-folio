@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.11.0.gem"
+  spec.version       = "0.12.0.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -23,8 +23,10 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-link-attributes"
   spec.add_runtime_dependency "jekyll-minifier"
   spec.add_runtime_dependency "jekyll-paginate-v2"
+  spec.add_runtime_dependency "jekyll-regex-replace"
   spec.add_runtime_dependency "jekyll-scholar"
   spec.add_runtime_dependency "jekyll-sitemap"
+  spec.add_runtime_dependency "jekyll-tabs"
   spec.add_runtime_dependency "jekyll-toc"
   spec.add_runtime_dependency "jekyll-twitter-plugin"
   spec.add_runtime_dependency "jemoji"
@@ -32,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "unicode_utils"
   spec.add_runtime_dependency "webrick"
 
+  spec.add_runtime_dependency "css_parser"
   spec.add_runtime_dependency "feedjira"
   spec.add_runtime_dependency "httparty"
 end
