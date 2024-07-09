@@ -269,6 +269,26 @@
             },
           },
         {%- endif -%}
+        {%- if site.dblp_url -%}
+          {
+            id: 'socials-dblp',
+            title: 'DBLP',
+            section: 'Socials',
+            handler: () => {
+              window.open("{{ site.dblp_url }}", "_blank");
+            },
+          },
+        {%- endif -%}
+        {%- if site.etis_id -%}
+          {
+            id: 'socials-etis',
+            title: 'ETIS',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://www.etis.ee/CV/{{site.etis_id}}/eng", "_blank");
+            },
+          },
+        {%- endif -%}
         {%- if site.github_username -%}
           {
             id: 'socials-github',
@@ -407,16 +427,6 @@
             section: 'Socials',
             handler: () => {
               window.open("https://gitlab.com/{{ site.gitlab_username }}", "_blank");
-            },
-          },
-        {%- endif -%}
-        {%- if site.dblp_url -%}
-          {
-            id: 'socials-dblp',
-            title: 'DBLP',
-            section: 'Socials',
-            handler: () => {
-              window.open("{{ site.dblp_url }}", "_blank");
             },
           },
         {%- endif -%}
