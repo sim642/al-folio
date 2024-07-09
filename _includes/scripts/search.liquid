@@ -101,7 +101,7 @@
       {%- for item in news -%}
         {
           {%- if item.inline -%}
-            {%- assign title = item.content | remove: '<p>' | remove: '</p>' | escape | strip -%}
+            {%- assign title = item.content | strip_html | strip_newlines | escape -%}
           {%- else -%}
             {%- assign title = item.title | escape -%}
           {%- endif -%}
@@ -121,7 +121,7 @@
           {%- for item in collection.docs -%}
             {
               {%- if item.inline -%}
-                {%- assign title = item.content | remove: '<p>' | remove: '</p>' | escape | strip -%}
+                {%- assign title = item.content | strip_html | strip_newlines | escape -%}
               {%- else -%}
                 {%- assign title = item.title | escape -%}
               {%- endif -%}
