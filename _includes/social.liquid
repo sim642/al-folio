@@ -11,7 +11,7 @@
     {% when 'discord_id' %}
       <a href="https://discord.com/users/{{ social[1] }}" title="Discord"><i class="fa-brands fa-discord"></i></a>
     {% when 'email' %}
-      <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="mailto:{{ social[1] | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
     {% when 'etis_id' %}
       <a href="https://www.etis.ee/CV/{{ social[1] }}/eng" title="ETIS"><i class="al al-etis"></i></a>
     {% when 'facebook_id' %}
@@ -41,7 +41,7 @@
     {% when 'linkedin_username' %}
       <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
     {% when 'mastodon_username' %}
-      <a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+      <a rel="me" href="https://{{ social[1] }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
     {% when 'medium_username' %}
       <a href="https://medium.com/@{{ social[1] }}" title="Medium"><i class="fa-brands fa-medium"></i></a>
     {% when 'orcid_id' %}
@@ -77,7 +77,7 @@
     {% when 'wechat_qr' %}
       <a id="WeChatBtn" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
       <div id="WeChatMod" class="wechat-modal">
-        <img src="{{ site.wechat_qr | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
+        <img src="{{ social[1] | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
       </div>
       {% include scripts/wechatModal.liquid %}
     {% when 'whatsapp_number' %}
