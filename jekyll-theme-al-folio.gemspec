@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.13.1.gem"
+  spec.version       = "0.13.2.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-toc"
   spec.add_runtime_dependency "jekyll-twitter-plugin"
   spec.add_runtime_dependency "jemoji"
+  spec.add_runtime_dependency "terser"
   spec.add_runtime_dependency "unicode_utils"
   spec.add_runtime_dependency "webrick"
 
