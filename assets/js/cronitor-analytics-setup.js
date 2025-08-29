@@ -1,3 +1,5 @@
+---
+---
 window.cronitor =
   window.cronitor ||
   function () {
