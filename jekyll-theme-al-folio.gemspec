@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.13.3.gem"
+  spec.version       = "0.13.4.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -12,8 +12,9 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|lib|LICENSE|README|_config\.yml)!i) }
 
-  spec.add_runtime_dependency "classifier-reborn"
   spec.add_runtime_dependency "jekyll"
+
+  # Core plugins that directly affect site building
   spec.add_runtime_dependency "jekyll-archives"
   spec.add_runtime_dependency "jekyll-email-protect"
   spec.add_runtime_dependency "jekyll-feed"
@@ -30,12 +31,15 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-toc"
   spec.add_runtime_dependency "jekyll-twitter-plugin"
   spec.add_runtime_dependency "jemoji"
-  spec.add_runtime_dependency "unicode_utils"
-  spec.add_runtime_dependency "webrick"
 
+  spec.add_runtime_dependency "classifier-reborn" # used for content categorization during the build
+
+  # Gems for development or external data fetching (outside :jekyll_plugins)
   spec.add_runtime_dependency "css_parser"
   spec.add_runtime_dependency "feedjira"
   spec.add_runtime_dependency "httparty"
   spec.add_runtime_dependency "observer" # used by jekyll-scholar
   spec.add_runtime_dependency "ostruct" # used by jekyll-twitter-plugin
+  # spec.add_runtime_dependency "unicode_utils" # should be already installed by jekyll
+  # spec.add_runtime_dependency "webrick" # should be already installed by jekyll
 end
