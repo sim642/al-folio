@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.13.2.gem"
+  spec.version       = "0.13.3.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -36,4 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "css_parser"
   spec.add_runtime_dependency "feedjira"
   spec.add_runtime_dependency "httparty"
+  spec.add_runtime_dependency "observer" # used by jekyll-scholar
+  spec.add_runtime_dependency "ostruct" # used by jekyll-twitter-plugin
 end
