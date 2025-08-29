@@ -29,4 +29,6 @@ gemspec
 #     gem 'css_parser'
 #     gem 'feedjira'
 #     gem 'httparty'
+#     gem 'observer' # used by jekyll-scholar
+#     gem 'ostruct' # used by jekyll-twitter-plugin
 # end
