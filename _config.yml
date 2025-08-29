@@ -224,7 +224,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-  - terser
 
 # Sitemap settings
 defaults:
@@ -241,13 +240,13 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  compress_javascript: false # set to false since we are using terser as the js minifier
-  # exclude: ["robots.txt", "assets/js/search/*.js"]
+  exclude: ["robots.txt", "assets/js/search/*.js"]
 
 # -----------------------------------------------------------------------------
 # Terser
 # -----------------------------------------------------------------------------
 
+# TODO: move under jekyll-minifier now?
 terser:
   compress:
     drop_console: true

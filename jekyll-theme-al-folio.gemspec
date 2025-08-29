@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-imagemagick"
   spec.add_runtime_dependency "jekyll-jupyter-notebook"
   spec.add_runtime_dependency "jekyll-link-attributes"
-  spec.add_runtime_dependency "jekyll-minifier"
+  spec.add_runtime_dependency "jekyll-minifier", ">= 0.2.0"
   spec.add_runtime_dependency "jekyll-paginate-v2"
   spec.add_runtime_dependency "jekyll-regex-replace"
   spec.add_runtime_dependency "jekyll-scholar"
@@ -30,7 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-toc"
   spec.add_runtime_dependency "jekyll-twitter-plugin"
   spec.add_runtime_dependency "jemoji"
-  spec.add_runtime_dependency "terser"
   spec.add_runtime_dependency "unicode_utils"
   spec.add_runtime_dependency "webrick"
 

@@ -22,7 +22,6 @@ gemspec
 #     gem 'jekyll-toc'
 #     gem 'jekyll-twitter-plugin'
 #     gem 'jemoji'
-#     gem 'terser'
 #     gem 'unicode_utils'
 #     gem 'webrick'
 # end
