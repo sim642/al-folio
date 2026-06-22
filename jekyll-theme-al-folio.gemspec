@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.15.0.gem"
+  spec.version       = "0.15.1.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
@@ -15,7 +15,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll"
 
   # Core plugins that directly affect site building
+  spec.add_runtime_dependency "jekyll-3rd-party-libraries"
   spec.add_runtime_dependency "jekyll-archives-v2"
+  # spec.add_runtime_dependency "jekyll-cache-bust"
   spec.add_runtime_dependency "jekyll-email-protect"
   spec.add_runtime_dependency "jekyll-feed"
   spec.add_runtime_dependency "jekyll-get-json"
