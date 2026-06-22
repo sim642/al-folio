@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-al-folio"
-  spec.version       = "0.16.2.gem"
+  spec.version       = "0.16.3.gem"
   spec.authors       = ["Maruan Al-Shedivat"]
   spec.email         = ["alshedivat@users.noreply.github.com"]
 
