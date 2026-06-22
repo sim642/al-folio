@@ -404,7 +404,7 @@ Photo formatting is made simple using [Bootstrap's grid system](https://getboots
 
 #### GitHub's repositories and user stats
 
-**al-folio** uses [github-readme-stats-fast](https://github.com/Pranesh-2005/github-readme-stats-fast) and [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) to display GitHub repositories and user stats on the `/repositories/` page.
+**al-folio** uses [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) to display GitHub repositories and user stats on the `/repositories/` page.
 
 [![Repositories Preview](readme_preview/repositories.png)](https://alshedivat.github.io/al-folio/repositories/)
 
