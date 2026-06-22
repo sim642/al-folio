@@ -105,9 +105,6 @@
           {% capture link %}mailto:{{ social[1] | encode_email }}{% endcapture %}
           {% assign sameaslinks = sameaslinks | push: link %}
         {% endcomment %}
-      {% when 'etis_id' %}
-        {% capture link %}https://www.etis.ee/CV/{{ social[1] }}/eng{% endcapture %}
-        {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'facebook_id' %}
         {% capture link %}https://facebook.com/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}

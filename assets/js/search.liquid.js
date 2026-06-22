@@ -135,10 +135,6 @@ ninja.data = [
           {%- assign social_id = "social-email" -%}
           {%- assign social_title = "email" -%}
           {%- capture social_url %}"mailto:{{ social[1] | encode_email }}"{% endcapture -%}
-        {%- when "etis_id" -%}
-          {%- assign social_id = "social-etis" -%}
-          {%- assign social_title = "ETIS" -%}
-          {%- capture social_url %}"https://www.etis.ee/CV/{{ social[1] }}/eng"{% endcapture -%}
         {%- when "facebook_id" -%}
           {%- assign social_id = "social-facebook" -%}
           {%- assign social_title = "Facebook" -%}
